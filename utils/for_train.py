@@ -14,9 +14,6 @@ from .for_eval import evaluate, accuracy
 
 
 
-data_plot = None
-
-
 def train_AutoEncoder(model, 
                       optimizer, 
                       tr_data, 
