@@ -37,7 +37,6 @@ def train_AutoEncoder(model,
         
         loss, tr_data = 0., tr_data[torch.randperm(n_sample)]
         for i in range(n_batch):
-            #x = add_noise(tr_data[i * batch_size : (i + 1) * batch_size])
             x = tr_data[i * batch_size : (i + 1) * batch_size]
             x = x.to(device)
             optimizer.zero_grad()
@@ -162,10 +161,6 @@ def get_V(H, C, U, n_cluster):
     #V = V[:, sort_idx].T  # it seems that V.T will get bad result
     V = V[:, sort_idx]
     return V
-    
-  
-def add_noise(x):
-    return x + (torch.randn(*(x.shape), device=x.device) + 2) * 0.1
       
     
 class History:
