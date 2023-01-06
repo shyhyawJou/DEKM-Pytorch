@@ -14,6 +14,9 @@ from .for_eval import evaluate, accuracy
 
 
 
+data_plot = None
+
+
 def train_AutoEncoder(model, 
                       optimizer, 
                       tr_data, 
@@ -161,7 +164,7 @@ def get_V(H, C, U, n_cluster):
     #V = V[:, sort_idx].T  # it seems that V.T will get bad result
     V = V[:, sort_idx]
     return V
-      
+          
     
 class History:
     def __init__(self, target='min'):
