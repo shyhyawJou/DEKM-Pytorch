@@ -2,9 +2,9 @@
 - Algorithm of Deep learning clustering -> [Deep Embedded K-Means Clustering](https://arxiv.org/abs/2109.15149)
 - official code -> https://github.com/spdj2271/DEKM
 
-# Result
+# Result (MNIST)
 - Training Result  
-Average accuracy on MNIST can reach over 85%, maximum can reach over 92%.  
+Average accuracy of training data can reach over 85%, maximum can reach over 92%.  
 model weight is at `./weight`
 ![](assets/train.png)
 
